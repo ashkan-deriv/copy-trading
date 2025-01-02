@@ -31,12 +31,16 @@ export default function PWAInstallPrompt() {
     // Show the install prompt
     installPrompt.prompt()
 
-    // Wait for the user to respond to the prompt
-    const { outcome } = await installPrompt.userChoice
-    
-    if (outcome === 'accepted') {
-      setIsVisible(false)
-      setInstallPrompt(null)
+    try {
+      // Wait for the user to respond to the prompt
+      const choiceResult = await installPrompt.userChoice
+      
+      if (choiceResult?.outcome === 'accepted') {
+        setIsVisible(false)
+        setInstallPrompt(null)
+      }
+    } catch (error) {
+      console.error('Error during installation:', error)
     }
   }
 
