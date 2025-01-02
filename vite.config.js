@@ -27,46 +27,67 @@ export default defineConfig(({ mode }) => {
           display: 'standalone',
           start_url: '/copy-trading/',
           scope: '/copy-trading/',
+          screenshots: [
+            {
+              src: '/copy-trading/screenshots/desktop.png',
+              sizes: '1920x1080',
+              type: 'image/png',
+              form_factor: 'wide'
+            },
+            {
+              src: '/copy-trading/screenshots/mobile.png',
+              sizes: '1080x1920',
+              type: 'image/png'
+            }
+          ],
           icons: [
             {
-              src: 'icons/icon-72x72.png',
+              src: '/copy-trading/icons/icon-72x72.png',
               sizes: '72x72',
-              type: 'image/png'
+              type: 'image/png',
+              purpose: 'any maskable'
             },
             {
-              src: 'icons/icon-96x96.png',
+              src: '/copy-trading/icons/icon-96x96.png',
               sizes: '96x96',
-              type: 'image/png'
+              type: 'image/png',
+              purpose: 'any maskable'
             },
             {
-              src: 'icons/icon-128x128.png',
+              src: '/copy-trading/icons/icon-128x128.png',
               sizes: '128x128',
-              type: 'image/png'
+              type: 'image/png',
+              purpose: 'any maskable'
             },
             {
-              src: 'icons/icon-144x144.png',
+              src: '/copy-trading/icons/icon-144x144.png',
               sizes: '144x144',
-              type: 'image/png'
+              type: 'image/png',
+              purpose: 'any maskable'
             },
             {
-              src: 'icons/icon-152x152.png',
+              src: '/copy-trading/icons/icon-152x152.png',
               sizes: '152x152',
-              type: 'image/png'
+              type: 'image/png',
+              purpose: 'any maskable'
             },
             {
-              src: 'icons/icon-192x192.png',
+              src: '/copy-trading/icons/icon-192x192.png',
               sizes: '192x192',
-              type: 'image/png'
+              type: 'image/png',
+              purpose: 'any maskable'
             },
             {
-              src: 'icons/icon-384x384.png',
+              src: '/copy-trading/icons/icon-384x384.png',
               sizes: '384x384',
-              type: 'image/png'
+              type: 'image/png',
+              purpose: 'any maskable'
             },
             {
-              src: 'icons/icon-512x512.png',
+              src: '/copy-trading/icons/icon-512x512.png',
               sizes: '512x512',
-              type: 'image/png'
+              type: 'image/png',
+              purpose: 'any maskable'
             }
           ]
         }
