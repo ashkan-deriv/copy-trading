@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/copy-trading/assets/deriv-favicon-CeTtMuIu.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="A React-based copy trading application" />
+    <link rel="apple-touch-icon" href="/copy-trading/icons/icon-192x192.png" />
+    <link rel="manifest" href="/copy-trading/manifest.json" />
+    <title>Copy Trading</title>
+    <script>
+      // Redirect to hash router if accessing root without hash and no query params
+      (function() {
+        if (!window.location.hash && 
+            window.location.pathname === '/copy-trading/' && 
+            !window.location.search) {  // Only redirect if no query parameters
+          window.location.replace(window.location.origin + '/copy-trading/#/');
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/copy-trading/assets/index-B7scUcR3.js"></script>
+    <link rel="stylesheet" crossorigin href="/copy-trading/assets/index-DialPXOZ.css">
+  <link rel="manifest" href="/copy-trading/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/copy-trading/registerSW.js"></script></head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
